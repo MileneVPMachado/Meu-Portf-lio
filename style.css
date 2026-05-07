@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient( #CDB4DB, #FFC8DD, #FFAFCC 50%, #BDE0FE, #A2D2FF 100%);
+  height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 0 4%; /* ✅ adicionado */
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header a {
+    color: rgb(112, 108, 108);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.rsociais {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    padding: 40px;
+}
+
+/* BOTÃO */
+.btn-contato a {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.btn-contato a:hover {
+    box-shadow: 0px 0px 8px #ffffffbd;
+}
+
+/* TOPO DO SITE */
+section.toposite {
+    padding: 40px 4%;
+}
+
+section.toposite .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.txt-toposite {
+    max-width: 550px; /* ✅ adicionado */
+}
+
+.toposite h1 {
+    color: black;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.toposite .txt-toposite p {
+    color: black;
+    margin: 40px 0;
+}
+
+/* ANIMAÇÃO */
+.toposite .img-toposite img {
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }      /* ✅ era top: 0 */
+    100% { transform: translateY(30px); } /* ✅ era top: 30px */
+}
