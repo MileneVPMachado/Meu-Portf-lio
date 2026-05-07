@@ -1,2 +1,2 @@
-# Meu Portfólio
-Repositório referente ao meu próprio porfólio
+# Meu Portfolio
+Repositório referente ao meu próprio porfólio, onde estou desenvolvendo o mesmo. 
